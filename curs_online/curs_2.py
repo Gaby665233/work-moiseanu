@@ -1,0 +1,53 @@
+def add(n1, n2):
+    return n1 + n2
+print(add(13, -6))
+
+
+def fun1(x):
+    return x
+def fun2(x):
+    return x * 2
+def fun3(x):
+    return x + 3
+x = fun1(fun2(fun3(1)))
+print(x)
+
+
+
+import math
+r = input("Introduceti raza: ")
+r = int(r)
+
+def circleArea():
+    return math.pi * r ** 2
+print ("Aria cercului este: ", circleArea()) 
+
+def function01(num):
+    return num*10
+def function02(num):
+    return num*20
+def function03(num):
+    return num*30
+result = function01(1) + function02(2) + function03(3) 
+print(result)
+
+
+def flodiv(a,b):
+    return 1- a // b ** 1
+result = flodiv(100, 100)
+print (result)
+
+
+def fun(x,y,z):
+    return x + y**2 + z//2
+print(fun(z=2,x=3,y=6))
+
+
+def fun(x,y,z):
+    return x + y**2 + z//2
+print(fun(2, 3, 6))
+
+
+
+
+

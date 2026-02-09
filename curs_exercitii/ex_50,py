@@ -1,0 +1,55 @@
+def fun(x = 3, y = 3):
+    ## x - local
+    y -= 1
+    z = x * y * 1
+    x *= 2 
+    return z
+
+## x - global
+x  = 1
+print(fun())
+
+# SA ARATE CATE VOCALE SI CATE CONSOANE SUNT
+
+vocale = "aeiouAEIOU"
+cuvant = input("Introdu o fraza:")
+
+def numar_voc_con(text):
+    nr_vocale = 0
+    nr_consone = 0
+
+    for i in text:
+         if i.isalpha(): 
+            if i in vocale:
+                nr_vocale += 1
+            else:
+                nr_consone += 1
+    
+    return{
+        "vocale" : nr_vocale,
+        "consoane" : nr_consone
+        
+    }
+
+rezultat = numar_voc_con(cuvant)
+print(rezultat)
+    
+
+    # SAU VARIANTA 2
+
+vocale = "aeiouAEIOU"
+
+
+def numara_vocale_consoane(text):
+    response = {"consoane":0, "vocale":0}
+    for i in text:
+        if i.isalpha():
+            if i in vocale:
+                response["vocale"] += 1
+            else:
+                response["consoane"] += 1
+    return response
+input_string = "Salutare, ce mai faci?" 
+numara_vocale_consoane(input_string)
+             
+            
